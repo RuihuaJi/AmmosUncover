@@ -70,12 +70,12 @@
   <repositories>
   		<repository>
       		<id>jitpack.io</id>
-      		<url>http://jitpack.io</url>
+      		<url>https://jitpack.io</url>
     	</repository>
   		<repository>
             <id>aliyun</id>
             <name>aliyun</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -91,7 +91,7 @@
    		<pluginRepository>
             <id>aliyun</id>
             <name>aliyun</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
