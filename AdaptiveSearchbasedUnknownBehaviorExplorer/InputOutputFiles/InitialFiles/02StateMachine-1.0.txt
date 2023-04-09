@@ -1,0 +1,34 @@
+State {Idle}; activecall {activecall == 0}; videoquality {videoquality == 0}
+State {Connected_1}; activecall {activecall == 1}; videoquality {videoquality == 3}
+State {NotFull}; activecall {activecall == 2}; videoquality {videoquality == 3}
+State {Full}; activecall {activecall == 3}; videoquality {videoquality == 3}
+Transition
+  Source_State {Idle}
+  Target_State {Connected_1}
+  trigger {dial}
+  PacketLoss {PacketLoss == 0.0}, PacketDelay {PacketDelay == 0.0}, PacketDuplication {PacketDuplication == 0.0}, PacketCorruption {PacketCorruption == 0.0}
+Transition
+  Source_State {Connected_1}
+  Target_State {Idle}
+  trigger {disconnect}
+  PacketLoss {PacketLoss == 0.0}, PacketDelay {PacketDelay == 0.0}, PacketDuplication {PacketDuplication == 0.0}, PacketCorruption {PacketCorruption == 0.0}
+Transition
+  Source_State {Connected_1}
+  Target_State {NotFull}
+  trigger {dial}
+  PacketLoss {PacketLoss == 0.0}, PacketDelay {PacketDelay == 0.0}, PacketDuplication {PacketDuplication == 0.0}, PacketCorruption {PacketCorruption == 0.0}
+Transition
+  Source_State {NotFull}
+  Target_State {Connected_1}
+  trigger {disconnect}
+  PacketLoss {PacketLoss == 0.0}, PacketDelay {PacketDelay == 0.0}, PacketDuplication {PacketDuplication == 0.0}, PacketCorruption {PacketCorruption == 0.0}
+Transition
+  Source_State {NotFull}
+  Target_State {Full}
+  trigger {dial}
+  PacketLoss {PacketLoss == 0.0}, PacketDelay {PacketDelay == 0.0}, PacketDuplication {PacketDuplication == 0.0}, PacketCorruption {PacketCorruption == 0.0}
+Transition
+  Source_State {Full}
+  Target_State {NotFull}
+  trigger {disconnect}
+  PacketLoss {PacketLoss == 0.0}, PacketDelay {PacketDelay == 0.0}, PacketDuplication {PacketDuplication == 0.0}, PacketCorruption {PacketCorruption == 0.0}
