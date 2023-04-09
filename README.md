@@ -19,6 +19,7 @@ The process of AMMOSUNCOVER is divided into a sequence of test cycles and each t
 ### (P1) Compare AMMOSUNCOVER with the previous approach
 
 * The average results of all the cost-effectiveness measures of the AmmosUncover and the previous work (ASUBE) methods.
+
 ![process](https://github.com/RuihuaJi/AmmosUncover/blob/main/image/RQ0-extend-with-previous-work-avg.png)
 
 The rows, i.e., ASUBE-5, ASUBE-10, and ASUBE-15, illustrate the average results of our previous work (ASUBE). The 5, 10, and 15 denote the number of test cases to generate per cycle. 
