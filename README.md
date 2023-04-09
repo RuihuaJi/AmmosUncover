@@ -67,7 +67,11 @@ https://drive.google.com/drive/folders/13D478pU0YiDWvEjMFUlMg0JaayRNkwfn?usp=sha
 
 ## Usage
 
-Ones are recommended to download the source code and import via **Eclipse**.
+It is recommended to download the source code and import via **IDEA** or **Eclipse**. This project is built using Maven. It's recommended to import it into an IDE as a Maven project. 
+
+**The "org.jar" library in the directory "lib" of project directory "AdaptiveSearchbasedUnknownBehaviorExplorer" is needed to be manually added to the project's libraries (e.g., build path -> libraries).**
+
+Moreover, JRE 8 (e.g., java[1.8.291.10]) or higher versions are recommended.
 
 ### Entrance Classes in the Java Project
 To use AMMOSUNCOVER, we prepare the following two entrance classes in the Java Project's package "org.ruihua.ASUBE.AdaptiveSearchbasedUnknownBehaviorExplorer.process". 
