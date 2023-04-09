@@ -450,8 +450,8 @@ public class Experiment_AMMOSUNCOVER_MOSA_SysDCS_Simulator {
 				1,//the index of trials (We conduct each configuration for many trails)
 				1, //the index of test cycle. It should start from 1th test cycle; or we need to manually create the file folder, the original state machine file (02), and the original possibly-existing system execution repository file (03).
 				"InputOutputFiles/", //Experiment Label for the File Folder
-				20, //the maximum of Executable Test Cases, in AmmosUncover, we set 120.
-				1 //the maximum of trials
+				120, //the maximum of Executable Test Cases, in AmmosUncover, we set 120.
+				10 //the maximum of trials
 				);
 		
 		ex.dsJitsiDesktop = new DSJitsiDesktop(
